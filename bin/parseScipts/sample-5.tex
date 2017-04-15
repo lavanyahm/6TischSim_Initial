@@ -1,0 +1,111 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\begin{document}
+
+\title{Experiment 1}
+%\maketitle
+
+\begin{Large}
+Simulation Parameters:
+\begin{itemize}
+\item Slot frame length = 10
+\item Packet Generation start time: \\
+Flow 1 = 100 ASN, Flow 2 = 102 ASN
+\item Deadline Constraints: \\
+Flow 1 = 30, Flow 2 = 40
+\end{itemize}
+\end{Large}
+
+\newpage
+\section*{No of Cells = 5}
+\subsection*{pkPeriod = 0.3}
+\begin{figure}[h]
+\begin{minipage}{3.5in}
+  \centering
+  \includegraphics[width=3.5in]{{pkPeriod_0.3_Cell_5_pdr}.png}
+  \captionof{figure}{PDR}
+\end{minipage}
+\begin{minipage}{2.0in}
+  \includegraphics[width=3.5in]{{pkPeriod_0.3_Cell_5_aveLatency}.png}
+  \captionof{figure}{Avg Latency}
+\end{minipage}
+\end{figure}
+
+\vspace{2cm}
+
+\begin{figure}[h]
+\begin{minipage}{3.5in}
+  \centering
+  \includegraphics[width=3.5in]{{pkPeriod_0.3_Cell_5_txCells}.png}
+  \captionof{figure}{No of Tx cells scheduled}
+\end{minipage}
+\begin{minipage}{2.0in}
+  \includegraphics[width=3.5in]{{pkPeriod_0.3_Cell_5_droppeddDelayExceed}.png}
+  \captionof{figure}{Packets dropped due to delay exceeded}
+\end{minipage}
+\end{figure}
+
+\newpage
+\subsection*{pkPeriod = 0.1}
+\begin{figure}[h]
+\begin{minipage}{3.5in}
+  \centering
+  \includegraphics[width=3.5in]{{pkPeriod_0.1_Cell_5_pdr}.png}
+  \captionof{figure}{PDR}
+\end{minipage}
+\begin{minipage}{2.0in}
+  \includegraphics[width=3.5in]{{pkPeriod_0.1_Cell_5_aveLatency}.png}
+  \captionof{figure}{Avg Latency}
+\end{minipage}
+\end{figure}
+
+\vspace{2cm}
+
+\begin{figure}[h]
+\begin{minipage}{3.5in}
+  \centering
+  \includegraphics[width=3.5in]{{pkPeriod_0.1_Cell_5_txCells}.png}
+  \captionof{figure}{No of Tx cells scheduled}
+\end{minipage}
+\begin{minipage}{2.0in}
+  \includegraphics[width=3.5in]{{pkPeriod_0.1_Cell_5_droppeddDelayExceed}.png}
+  \captionof{figure}{Packets dropped due to delay exceeded}
+\end{minipage}
+\end{figure}
+
+\newpage
+\subsection*{pkPeriod = 0.05}
+\begin{figure}[h]
+\begin{minipage}{3.5in}
+  \centering
+  \includegraphics[width=3.5in]{{pkPeriod_0.05_Cell_5_pdr}.png}
+  \captionof{figure}{PDR}
+\end{minipage}
+\begin{minipage}{2.0in}
+  \includegraphics[width=3.5in]{{pkPeriod_0.05_Cell_5_aveLatency}.png}
+  \captionof{figure}{Avg Latency}
+\end{minipage}
+\end{figure}
+
+\vspace{2cm}
+
+\begin{figure}[h]
+\begin{minipage}{3.5in}
+  \centering
+  \includegraphics[width=3.5in]{{pkPeriod_0.05_Cell_5_txCells}.png}
+  \captionof{figure}{No of Tx cells scheduled}
+\end{minipage}
+\begin{minipage}{2.0in}
+  \includegraphics[width=3.5in] {{pkPeriod_0.05_Cell_5_droppeddDelayExceed}.png}
+  \captionof{figure}{Packets dropped due to delay exceeded}
+\end{minipage}
+\end{figure}
+
+
+\end{document}
