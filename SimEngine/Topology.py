@@ -107,7 +107,7 @@ class Topology(object):
 	         if numStableNeighbors == self.STABLE_NEIGHBORS:    
                     connected = True
 		#LHM
-  		#print"Topology MoteId{0}--numofStable Neigbor{1} connected={2} ".format (mote.id,numStableNeighbors,connected)
+  		    print"Topology MoteId{0}--numofStable Neigbor{1} connected={2} ".format (mote.id,numStableNeighbors,connected)
             
             connectedMotes += [mote]
         
@@ -132,12 +132,12 @@ class Topology(object):
                 except KeyError:
                     pass
                 else:
-          #          print "mote = {0:>3}, neigh = {1:<3}, dist = {2:>3}m, rssi = {3:>3}dBm, pdr = {4:.3f}%".format(
+                    print "mote = {0:>3}, neigh = {1:<3}, dist = {2:>3}m, rssi = {3:>3}dBm, pdr = {4:.3f}%".format(
                         mote.id,
                         neighbor.id,
                         int(distance),
                         int(rssi),
-                        100*pdr
+                        100*pdr)
     
         forDistance =0
         forMoteId =0

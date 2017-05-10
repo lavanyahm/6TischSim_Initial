@@ -65,13 +65,13 @@ def parseCliOptions():
     parser.add_argument( '--numRuns',
         dest       = 'numRuns',
         type       = int,
-        default    = 100,
+        default    = 1,
         help       = '[sim] Number of simulation runs.',
     )
     parser.add_argument( '--numCyclesPerRun',
         dest       = 'numCyclesPerRun',
         type       = int,
-        default    = 1000,# * 60 *30,
+        default    = 1, #000, * 60 *30,
         help       = '[simulation] Duration of a run, in slotframes.',
     )
     parser.add_argument('--simDataDir',

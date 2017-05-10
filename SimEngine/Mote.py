@@ -1865,14 +1865,14 @@ class Mote(object):
           diff =  abs(max(PDRDebtList.values()) -  min(PDRDebtList.values()))
           if diff >= self.PDR_THRESHOLD:
 	         self.defQid = max(PDRDebtList, key=PDRDebtList.get)	 
-                 print "Diff  {0} self.defQid {1}   List {2} ".format(diff,self.defQid, PDRDebtList) 
+                # print "Diff  {0} self.defQid {1}   List {2} ".format(diff,self.defQid, PDRDebtList) 
          	 return max(PDRDebtList, key=PDRDebtList.get)
           else:
                 if self.defQid in  PDRDebtList:
-                       print "self.defQid  {1}  List{2} ".format(diff,self.defQid, PDRDebtList) 
+                  #     print "self.defQid  {1}  List{2} ".format(diff,self.defQid, PDRDebtList) 
 	               return self.defQid
       		else:
-                     print "qid  self.defQid  {1}  not in  List {2} send {3}".format(diff,self.defQid, PDRDebtList,max(PDRDebtList, key=PDRDebtList.get) )
+                   #  print "qid  self.defQid  {1}  not in  List {2} send {3}".format(diff,self.defQid, PDRDebtList,max(PDRDebtList, key=PDRDebtList.get) )
 		     return max(PDRDebtList, key=PDRDebtList.get)	
 			
     def  _getPacketFromQueue(self,qId):
